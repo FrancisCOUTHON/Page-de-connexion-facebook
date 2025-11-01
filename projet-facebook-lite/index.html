@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Connexion - Facebook Lite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">facebook</h1>
+
+    <form class="login-form" action="login.php" method="POST">
+      <input type="text" name="login" placeholder="E-mail ou numéro de téléphone" required />
+      <input type="password" name="password" placeholder="Mot de passe" required />
+      <button type="submit" class="btn-login">Se connecter</button>
+    </form>
+
+    <a href="#" class="forgot" onclick="forgotPassword()">Mot de passe oublié ?</a>
+    <hr />
+    <button type="button" class="btn-create" onclick="window.location.href='signup.html'">Créer un nouveau compte</button>
+  </div>
+
+  <footer>
+    <p>Facebook Lite © 2025</p>
+  </footer>
+
+  <script>
+    function forgotPassword() {
+      alert("Pour récupérer votre mot de passe, utilisez la procédure officielle ou contactez le support.");
+    }
+  </script>
+</body>
+</html>
